@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head><title> Form Creation</title>
+    <style>
+       
+          h3{
+            color:deeppink;
+            font-family:sans-serif;
+            font-size: 30px
+        }
+        
+        u{color: blueviolet}
+        
+        p{
+            color:green;
+            font-family: monospace;
+            font-size: 20px}
+        
+        label{
+            color: blue;
+            font-family: cursive;
+            font-size: 30px
+        }
+        
+        input{
+                border: 6px groove red;
+                height: 40px;width: 200px;
+                font-size: 20px
+            }
+        
+        select{
+            border: red solid 2px;
+            color:chartreuse;
+            height: 40px;
+            width: 300px;
+            font-size: 30px
+        }
+        
+        option{
+            color: chartreuse;
+            font-size: 30px;
+        }
+        
+      
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset style="border:15px groove red; width: 1500px;height: 2900px;background-color:antiquewhite">
+            <i><h3>Welcome user...!!!! Please fill the form</h3></i>
+            
+            <hr>
+            
+           <u> <h3>Text box</h3></u>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter Name" pattern="[a-zA-Z]{3,10}" required >
+            
+            <p>{3,10}:-Name Should be of minimum 3 characters and maximum of 10 characters</p>
+            <p>[a-zA-Z]:-Name should contains characters only</p>
+            
+            <u><h3>Email box</h3></u>
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email" pattern="[a-zA-Z0-9$*%]+@[a-zA-Z]+.[a-z]{2,3}" required title="Email">
+            
+            <u><h3>Spin control</h3></u>
+            <label>Age</label>
+            <input type="number" placeholder="enter the age" min='18'max='30'>
+            
+           <u> <h3>Phone Number</h3></u>
+            <label>Phone_no</label>
+            <input type="text"  placeholder="Enter phone Number"  title="Please enter valid phone number" pattern="^[7-9]{1}[0-9]{9}$">
+            
+            <u><h3>Calender Box</h3></u>
+            <lable>Date of Birth</lable>
+            <input type="date" min="2000-01-01"  max="2023-01-01" >
+            
+            
+            <u><h3>Check Box</h3></u>
+            <label>Technical Skills</label>
+            <input type="checkbox">java  
+            <input type="checkbox">Database
+            <input type="checkbox">C++
+            <input type="checkbox">Python
+            <input type="checkbox">HTML,Js
+            
+            <u><h3>Select Box</h3></u>
+            <label>Select City:</label>
+            <select>
+            <option>select</option>
+            <option>Bangaluru</option>
+            <option>Davangere</option>
+             <option>Mysore</option>
+             <option>Shivamogga</option>
+                
+            </select>
+            
+            <u><h3>Radio Button</h3></u>
+            <label>Gender</label>
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Female
+    <input type="radio" name="gender">Others
+            
+            
+           <u><h3>Upload Button</h3></u> 
+            <label>Upload Your Resume:</label>
+            <input type="file">
+            
+            <u><h3>Text Area</h3></u>
+            <textarea style="color: coral;border: skyblue solid 2px">Write your comments here....!!!!</textarea>
+            
+           <u><h3>Range Button</h3></u>
+            <input type="range">
+            
+            
+           <u><h3>Search Box</h3></u>
+            <input type="search">
+            
+            <u><h3>Color Pallet Box</h3></u>
+            <input type="color">
+            
+            <u><h3>Time</h3></u>
+            <input type="time">
+            
+            <u><h3>Date & Time</h3></u>
+            <input type="datetime-local">
+            
+            <u><h3>Reset Button</h3></u>
+            <input type="reset">
+ 
+            
+            <br><br>
+             <h2 style="color:rebeccapurple;font-family: cursive;border:5px dotted green ;width:900px">CHECK ALL THE REQUIRED FIELDS BEFORE SUBMIT....!!</h2>
+            <u><h3>Submitt Button</h3></u>
+            <input type="submit">   
+                
+                <br><br><br>
+                
+                <p style="color:blueviolet; font-family:sans-serif;font-size: 50px;text-align: end">Prepared by Zeeshan</p>
+            
+        </form>
+    
+    </body>
+</html>
